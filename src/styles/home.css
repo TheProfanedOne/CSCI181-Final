@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Header styles */
+.horizontal > ul > li:first-child {
+    background-color: cyan;
+}
+
+.horizontal > ul > li:first-child > a {
+    color: darkblue;
+}
+
+/* All Layer styles */
+#layer_container {
+    clear: both;
+    position: relative;
+}
+
+.layer {
+    width: 100%;
+}
+
+/* Top Layer styles */
+#top {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -50%) scale(0.9);
+}
+
+/* Middle Layer styles */
+#middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#middle_video {
+    margin: 0 auto;
+}
+
+#middle_text {
+    margin: auto 0;
+}
+
+#middle_text h4,
+#middle_text p {
+    width: 85%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/* Bottom Layer styles */
+#bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    height: 270px;
+}
+
+#bottom_map {
+    margin: auto;
+}
+
+#map_img {
+    border-radius: 10%;
+    box-shadow: rgb(146, 146, 146) 15px 15px 15px;
+}
+
+#bottom_contact {
+    border: 1px solid #FFF;
+    border-radius: 20%;
+    padding: 3rem;
+    margin: auto;
+}
+
+/* Figcaption styles */
+figcaption { text-align: center; }
