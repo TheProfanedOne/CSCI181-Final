@@ -1,12 +1,14 @@
-
 window.onload = setForm;
 
-const form = document.forms[0];
-
 function setForm() {
-    form.onsubmit = function() {
+    document.forms[0].onsubmit = function() {
         if (this.checkValidity()) {
-            alert("Does this work?");
+            const data = new FormData(document.forms[0]);
+            const msgInfo = data.entries();
+            for (const [key, value] of msgInfo) {
+                console.log(key, value);
+            }
+            alert("Email sent!");
         }
         return false;
     }

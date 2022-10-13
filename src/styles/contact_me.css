@@ -46,4 +46,8 @@
     width: 100%;
 }
 
-input[type='submit'], input[type='reset']
+input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}

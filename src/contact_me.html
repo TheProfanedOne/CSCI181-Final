@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Me</title>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/contact_me.css">
-        <script src="scripts/contact_form.js" type="text/javscript"></script>
+        <script src="scripts/contact_form.js"></script>
     </head>
     <body>
         <header>
@@ -23,12 +23,17 @@
         </header>
 
         <form action="http://www.example.com" id="contact_form" method="post">
-            <fieldset id="questions">
-                <legend>Send Me an Email</legend>
+            <fieldset id="email_set">
+                <legend>Send Me an Email With Your Questions</legend>
 
                 <div class="formRow">
-                    <label for="from">From*</label>
+                    <label for="from">Response Email*</label>
                     <input type="email" name="emailFrom" id="from" placeholder="example@example.com" required>
+                </div>
+                <hr>
+                <div class="formRow">
+                    <label for="name">Your Name*</label>
+                    <input type="text" name="emailName" id="name" required>
                 </div>
                 <hr>
                 <div class="formRow">
@@ -53,3 +58,4 @@
         </footer>
     </body>
 </html>
+
