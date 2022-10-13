@@ -36,6 +36,8 @@ header {
     margin: 0px;
     padding: 0px;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .horizontal li {
@@ -46,7 +48,7 @@ header {
     font-size: 1em;
     line-height: 2em;
     float: left;
-    width: 50%;
+    width: 100%;
     text-align: center;
     background-color: hsl(240, 100%, 27.25%);
 }
