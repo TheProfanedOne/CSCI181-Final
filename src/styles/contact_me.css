@@ -8,3 +8,31 @@
 #contact > a {
     color: darkblue;
 }
+
+/* Form layout styles */
+#contact_form {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    background-color: inherit;
+}
+
+#contact_form > fieldset {
+    flex: 1 1 100%;
+    margin: 10px;
+}
+
+.formRow:has(input) {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.formRow:has(textarea) {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.formRow > * {
+    flex: 1 1 150px;
+}
+

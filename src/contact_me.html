@@ -7,6 +7,7 @@
         <title>Contact Me</title>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/contact_me.css">
+        <script src="scripts/contact_form.js" type="module"></script>
     </head>
     <body>
         <header>
@@ -20,6 +21,32 @@
                 </ul>
             </nav>
         </header>
+
+        <form action="/src/scripts/contact_form.js" id="contact_form" method="post">
+            <fieldset>
+                <legend>Send Me an Email</legend>
+
+                <div class="formRow">
+                    <label for="from">From*</label>
+                    <input type="email" name="emailFrom" id="from" placeholder="example@example.com" required>
+                </div>
+                <br>
+                <div class="formRow">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="emailSubject" id="subject">
+                </div>
+                <br>
+                <div class="formRow">
+                    <label for="message">Message*</label>
+                    <textarea name="emailMessage" id="message" placeholder="You must put something here." required></textarea>
+                </div>
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Send">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
 
         <footer>
             Matthew Mousseau &nbsp;&mdash;&nbsp; 264 Comer Hill Rd. - Great Falls, MT 59404-4903
