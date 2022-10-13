@@ -36,3 +36,6 @@
     flex: 1 1 150px;
 }
 
+.formRow:has(textarea) label {
+    flex: 1 1 25px;
+}
