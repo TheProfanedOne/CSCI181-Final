@@ -39,3 +39,11 @@
 .formRow:has(textarea) label {
     flex: 1 1 25px;
 }
+
+/* Button styles */
+#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset']
