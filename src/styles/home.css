@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 /* Header styles */
-.horizontal > ul > li:first-child {
+#home {
     background-color: cyan;
 }
 
-.horizontal > ul > li:first-child > a {
+#home > a {
     color: darkblue;
 }
 

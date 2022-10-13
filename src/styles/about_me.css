@@ -1,0 +1,10 @@
+@charset "uft-8";
+
+/* Header styles */
+#about {
+    background-color: cyan;
+}
+
+#about > a {
+    color: darkblue;
+}

@@ -1,0 +1,10 @@
+@charset "uft-8";
+
+/* Header styles */
+#skills {
+    background-color: cyan;
+}
+
+#skills > a {
+    color: darkblue;
+}
