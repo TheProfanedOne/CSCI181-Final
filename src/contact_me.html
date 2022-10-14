@@ -23,9 +23,11 @@
         </header>
 
         <article>
-            <h1>Feedback</h1>
+            <h1>Feedback Survey</h1>
             <p>
-                How does this paragraph look?
+                As you might imagine, this website is a work-in-progress. <br>
+                Because of this, any feedback will be appreciated. <br>
+                (constructive feedback only please)
             </p>
         </article>
 
@@ -34,12 +36,47 @@
                 <legend>How Did I Do With This Website?</legend>
 
                 <div class="formRow">
-                    <label for="overall">Rate your overall experience<br>(On a scale from 0 to 10)</label>
+                    <label for="">Does the color<br>palette work well?</label>
+                    <fieldset class="radioGroup">
+                        <label for="fbColorY">Yes</label>
+                        <input type="radio" name="fbColor" id="fbColorY" value="yes">
+                        <label for="fbColorN">No</label>
+                        <input type="radio" name="fbColor" id="fbColorN" value="no">
+                    </fieldset>
+                </div>
+                <hr>
+                <div class="formRow">
+                    <label for="">Are the header and footer<br>formatted appropriately?</label>
+                    <fieldset class="radioGroup">
+                        <label for="fbHeadFootY">Yes</label>
+                        <input type="radio" name="fbHeadFoot" id="fbHeadFootY" value="yes">
+                        <label for="fbHeadFootN">No</label>
+                        <input type="radio" name="fbHeadFoot" id="fbHeadFootN" value="no">
+                    </fieldset>
+                </div>
+                <hr>
+                <div class="formRow">
+                    <label for="site">Which was your favorite page?<br>(or pages)</label>
+                    <select name="faveSites" id="site" size="5" multiple>
+                        <option value="home">Home</option>
+                        <option value="about">About Me</option>
+                        <option value="skills">Skills/Services</option>
+                        <option value="work">My Work</option>
+                        <option value="cont">Contact Me (this one)</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="formRow">
+                    <label for="overall">Rate your overall experience.<br>(On a scale from 0 to 10)</label>
                     0
                     <input type="range" name="fbOverall" id="overall" value="5" step="1" min="0" max="10">
                     10
                 </div>
                 <hr>
+                <div class="formRow">
+                    <input type="checkbox" name="updateCB" id="updateMe" value="yes">
+                    <label for="updateMe">Mail me if there are any major updates to this site.</label>
+                </div>
             </fieldset>
 
             <fieldset id="email_set">
@@ -73,7 +110,7 @@
         </form>
 
         <footer>
-            Matthew Mousseau &nbsp;&mdash;&nbsp; 264 Comer Hill Rd. - Great Falls, MT 59404-4903
+            Matthew Mousseau &nbsp;&mdash;&nbsp; 264 Comer Hill Rd. &nbsp;&mdash;&nbsp; Great Falls, MT 59404-4903
         </footer>
     </body>
 </html>
