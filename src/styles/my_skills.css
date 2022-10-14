@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Header styles */
+#skills {
+    background-color: cyan;
+}
+
+#skills > a {
+    color: darkblue;
+}
+
+/* Main styles */
+main {
+    margin: 0px 40px 20px;
+}
+
+section#skills_sect {
+    margin-bottom: 30px;
+}
+
+main h1 {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 167, 156);
+}
+
+table {
+    background: #808080;
+    border: 10px outset darkblue;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(39, 39, 39);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1099px) {
+
+    main h1 {
+        text-align: center;
+    }
+
+    main {
+        padding: 0px;
+        margin: auto;
+    }
+
+    table {
+        font-size: 0.75em;
+    }
+}
