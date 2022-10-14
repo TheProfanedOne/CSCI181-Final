@@ -111,6 +111,11 @@ header {
 
 a { color: cyan; }
 
+/* Main styles */
+main {
+    padding: 20px;
+}
+
 /* Footer styles */
 footer {
     -webkit-box-sizing: border-box;

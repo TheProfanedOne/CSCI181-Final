@@ -9,11 +9,6 @@
     color: darkblue;
 }
 
-/* Article styles */
-article {
-    padding: 20px;
-}
-
 /* Form styles */
 #contact_form {
     display: flex;
