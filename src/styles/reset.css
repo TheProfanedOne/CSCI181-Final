@@ -114,6 +114,12 @@ main {
     padding: 20px;
 }
 
+main h1 {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 167, 156);
+}
+
 /* Footer styles */
 footer {
     -webkit-box-sizing: border-box;

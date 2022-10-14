@@ -14,12 +14,6 @@ main {
     padding: 0px 40px 20px;
 }
 
-main h1 {
-    font-size: 2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(104, 167, 156);
-}
-
 main p {
     font-size: 1.1em;
 }

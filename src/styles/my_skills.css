@@ -18,12 +18,6 @@ section#skills_sect {
     margin-bottom: 30px;
 }
 
-main h1 {
-    font-size: 2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(104, 167, 156);
-}
-
 table {
     background: #808080;
     border: 10px outset darkblue;
