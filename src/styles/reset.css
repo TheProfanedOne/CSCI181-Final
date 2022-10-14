@@ -12,6 +12,7 @@ html {
     body {
         width: 1100px;
         height: 100vh;
+        min-height: 966px;
         margin: 0px auto;
         position: absolute;
         top: 0%;
