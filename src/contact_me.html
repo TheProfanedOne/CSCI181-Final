@@ -22,12 +22,20 @@
             </nav>
         </header>
 
+        <article>
+            <h1>Feedback</h1>
+
+        </article>
+
         <form action="http://www.example.com" id="contact_form" method="post">
             <fieldset id="feedback">
                 <legend>How Did I Do With This Website?</legend>
 
                 <div class="formRow">
-
+                    <label for="overall">Rate your overall experience<br>(On a scale from 0 to 10)</label>
+                    0
+                    <input type="range" name="fbOverall" id="overall" value="5" step="1" min="0" max="10">
+                    10
                 </div>
             </fieldset>
 

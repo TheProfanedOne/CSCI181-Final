@@ -9,7 +9,12 @@
     color: darkblue;
 }
 
-/* Form layout styles */
+/* Article styles */
+article {
+    padding: 20px;
+}
+
+/* Form styles */
 #contact_form {
     display: flex;
     flex-flow: row wrap;
@@ -27,7 +32,8 @@
 }
 
 legend {
-    background-color: rgba(0, 76, 216, 0.158);
+    background-color: rgb(51, 62, 82);
+    padding: 5px;
 }
 
 .formRow:has(input) {
