@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Me</title>
         <link rel="stylesheet" href="styles/reset.css">
@@ -23,8 +23,16 @@
         </header>
 
         <form action="http://www.example.com" id="contact_form" method="post">
+            <fieldset id="feedback">
+                <legend>How Did I Do With This Website?</legend>
+
+                <div class="formRow">
+
+                </div>
+            </fieldset>
+
             <fieldset id="email_set">
-                <legend>Send Me an Email With Your Questions</legend>
+                <legend>Send Me an Email With the Rest of Your Questions</legend>
 
                 <div class="formRow">
                     <label for="from">Response Email*</label>
@@ -42,8 +50,8 @@
                 </div>
                 <hr>
                 <div class="formRow">
-                    <label for="message">Message*</label>
-                    <textarea name="emailMessage" id="message" placeholder="You must put something here." required></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="emailMessage" id="message"></textarea>
                 </div>
             </fieldset>
 

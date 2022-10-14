@@ -13,6 +13,7 @@
 #layer_container {
     clear: both;
     position: relative;
+    overflow: hidden;
 }
 
 .layer {
