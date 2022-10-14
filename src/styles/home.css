@@ -68,10 +68,6 @@ figure#bottom_video > video {
     width: inherit
 }
 
-/* Mobile styles */
-/* @media only screen and (max-width: 1099px) {
-
-    #layer_container {
-        clear: both;
-    }
-} */
+figure#bottom_video > figcaption {
+    margin-top: 10px;
+}
