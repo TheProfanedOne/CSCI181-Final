@@ -3,7 +3,7 @@
 
 
 /* Desktop styles */
-@media screen and (min-width: 1100px) {
+@media only screen and (min-width: 1100px) {
 
     /* DOM styles */
     html {
@@ -23,14 +23,51 @@
         transform: translateX(-50%);
     }
 
+    /* Header styles */
+    .horizontal > ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    a#navicon { display: none; }
+
+}
+
+a#navicon {
+    box-sizing: border-box;
+    max-height: 34px;
 }
 
 /* Mobile styles */
-@media screen and (max-width: 1099px) {
+@media only screen and (max-width: 1099px) {
 
     body {
         width: 100%;
         position: relative;
+        margin: 0px;
+    }
+
+    a#navicon {
+        box-sizing: border-box;
+        display: block;
+        background-color: hsl(240, 100%, 27.25%);
+        border-bottom: 2px solid white;
+    }
+
+    .horizontal > ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul, a#navicon:focus+ul, .horizontal > ul:hover {
+        float: left;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header ~ * {
+        clear: both;
     }
     
 }
@@ -58,8 +95,6 @@ header {
     margin: 0px;
     padding: 0px;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
 }
 
 .horizontal li {
