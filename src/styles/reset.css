@@ -49,7 +49,7 @@ html {
         line-height: 2em;
         text-align: center;
         position: absolute;
-        bottom: 966px;
+        top: 932px;
     }
 
     @media (min-height: 967px) {
